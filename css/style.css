@@ -209,7 +209,7 @@ ul {
 
 .hero-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 3em;
 }
 .hero-text h2 {
     font-size: 2rem;
