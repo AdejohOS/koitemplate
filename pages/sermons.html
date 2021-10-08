@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--<link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">-->
+</head>
+<body>
+    <main class="app">
+        <header class="header" data-scene>
+            <a class="header-logo" href="#"><img src="/images/koilogo.png" alt=""></a>
+
+            <div class="header-toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+
+                <div class="nav-content bd-grid">
+                    
+                        <a href="#" class="mobile-fill">
+                            <img src="/images/koilogo.png" class="nav-img" alt="">
+                        </a>
+
+                    
+
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="/index.html" class="nav-link "> Home </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> About Us </a></li>
+
+                            
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-link">Units <i class='bx bxs-chevron-down dropdown-icon' ></i></a>
+                                
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#" class="nav-link">Ushering</a></li>
+                                    
+                                    <li class="dropdown-item"><a href="#" class="nav-link">Technical</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">Welfare</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="/pages/sermons.html" class="nav-link active"> Sermons</a></li>
+                            <li class="nav-item"><a href="/pages/contact.html" class="nav-link"> Contact </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav-extra">
+                        <ul class="extra-list">
+                            <li><a href="" class="extra-link primary"> Give <i class='bx bx-heart-circle'></i></a></li>
+                            <li><a href="" class="extra-link secondary">Radio <i class='bx bx-radio'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <section class="sermons" data-scene>
+            <img src="/images/sermons.png" alt="" class="sermons-img">
+            
+            
+            
+        </section>
+       
+        <section class="search">
+            
+            <div class="search-form">
+                <div class="search-title">
+                    <h2>Search Messages</h2>
+                    <p>Enter a search term on either field</p>                                                                                                           </p>
+                </div>
+                <form action="">
+
+                    <div class="form-row">
+                        <div class="form-input">
+                            <p>Message Title</p>
+                            <input type="text">
+                        </div>
+                   
+
+                    
+                        <div class="form-input">
+                            <p>Category</p>
+                            <input type="text">
+                        </div>
+                   
+
+                    
+                        <div class="form-input">
+                            <p>Speaker</p>
+                            <input type="text">
+                        </div>
+                    
+
+                    
+                        <div class="form-input">
+                            <p>Year (e.g 2011)</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="btn-d">
+                        <input type="submit" value="Search">
+                    </div>
+
+                </form>
+            </div>
+
+            
+           
+        </section>
+
+        <section class="message">
+            
+
+                
+                <div class="message-content">
+                    <div class="box">
+                        <div class="col1">
+                            <img src="{{message.message_image.url}}" alt="">
+                        </div>
+                        <div class="col2">
+                            <p class="date"><i class=" dt far fa-clock"></i> August 03 2021 | <i class=" dt far fa-user"></i> <span class="teacher">Apostle Joshua Selman</span></p>
+            
+                            <hr>
+                            <h2 class="topic">Wisdom in Thanksgiving</h2>
+                            <p class="location" >Koinonia, Abuja</p>
+                            <ul class="share">
+                                <p class="share"><a href="{% url 'details' message.id %}">Share <i class="fas fa-share-alt"></i></a></p>
+      
+                            </ul>
+                            
+                        </div>
+    
+                        
+                            <div class="col3">
+                                
+                                <a class="btn" href="{{message.message_audio.url}}">Listen <i class="fas fa-headphones-alt"></i></a>
+                                <a class="btn" href="{{message.message_audio.url}}" download>Download <i class="far fa-arrow-alt-circle-down"></i></a>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+    
+                {% endfor %}
+    
+                <div class="pagination">
+    
+    
+                    {% if message_page_obj.has_previous %}
+                        <div class="first">
+    
+                            <a class="btn" href="{% my_url 1 'page' request.GET.urlencode %}">&laquo; First</a>
+                            <a class="btn" href="{% my_url message_page_obj.previous_page_number  'page' request.GET.urlencode %}"> Previous</a>
+                        
+                        </div>
+                    {% endif %}
+    
+                    <span class="mid">
+                        Page {{message_page_obj.number}} of  {{message_page_obj.paginator.num_pages}}.
+                    </span>
+    
+                    <div class="last">
+                        {% if message_page_obj.has_next %}
+                        <a class="btn" href="{% my_url message_page_obj.next_page_number  'page' request.GET.urlencode %}"> Next </a>
+                        <a class="btn" href="{% my_url message_page_obj.paginator.num_pages  'page' request.GET.urlencode %}">&raquo; Last </a>
+                        {% endif %}
+                    </div>
+                    
+    
+                </div>
+
+        </section>
+
+        
+
+        
+
+       
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="social">
+
+                    <a href="https://www.twitter.com/koinoniaeni" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/koinoniaeni" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/koinoniaglobal"target="_blank" ><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.youtube.com/Koinonia Global" target="_blank"><i class='bx bxl-youtube' ></i></a>
+
+                </div>
+                <p>&copy; 2021 KOINONIA NETWORK INTERNATIONAL</p>
+            </div>
+        </footer>
+    </main>
+    <!--<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>-->
+    <script src="/js/app.js"></script>
+</body>
+</html>
