@@ -184,7 +184,7 @@ ul {
     display: flex;
     align-items: center;
     color: var(--white);
-    padding: 40px;
+    padding: 30px;
 }
 
 .hero .hero-img {
@@ -212,7 +212,7 @@ ul {
     bottom: 20px;
 }
 .hero-text h2 {
-    font-size: 3em;
+    font-size: 2rem;
     line-height: .98em;
     font-weight: 900;
     max-width: 700px;
@@ -248,14 +248,14 @@ ul {
 .about-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 7rem 1rem;
-    gap: 5rem;
+    padding: 5rem 1rem;
+    gap: 2rem;
 }
 .about-note h3{
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     padding-bottom: 1rem;
 }
@@ -320,9 +320,8 @@ ul {
     background: #eef4fe;
     width: 100%;
     margin: 6rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 6rem;
+    
+    padding: 1rem;
     gap: 6rem;
     
 }
@@ -524,7 +523,7 @@ form .form-row .form-input{
 .contact-us {
     position: relative;
     width: 100%;
-    padding: 6rem;
+    padding: 6rem 1rem;
     background-color: #ebe6e6;
     overflow: hidden;
     display: flex;
@@ -759,6 +758,10 @@ form .form-row .form-input{
     .text, .social-media, .item p{
         font-size: 1rem;
     }
+    .koinonia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     
 
@@ -818,6 +821,9 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 4em;
+}
+footer p{
+    font-size: .6rem;
 }
 .social i{
     color: #aec1c9;;
