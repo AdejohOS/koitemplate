@@ -28,10 +28,14 @@
     margin: 0;
     padding: 0;
     line-height: 30px;
+    
+    
 }
 body, input, textarea {
     font-family: var(--base-font);
     font-size: var(--base-font-size);
+    color: #444444;
+    font-size: var(--normal-font-size);
 }
 a {
     text-decoration: none;
