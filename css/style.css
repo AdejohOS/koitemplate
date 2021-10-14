@@ -1,53 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100&display=swap');
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
-:root {
-    --header-height: 4rem;
-    --base-font-size: 1rem;
-
-    --primary-color: #16262c;
-    --secondary-color: #1e3740;
-    --tertiary-color: #0b98cd;
-    
-    --light-secondary: #FEC260;
-    --white:#fff;
-    --footer-color: #16262c;
-    --background-linear-gradient: linear-gradient(to right, #2A0944, #A12568);
-
-    --base-font: 'Poppins', sans-serif;
-    --nav-name-font-size: 1.5rem;
-    --normal-font-size: .938rem;
-
-    --z-index: 100;
-
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 30px;
-    
-    
-}
-body, input, textarea {
-    font-family: var(--base-font);
-    font-size: var(--base-font-size);
-    color: #444444;
-    font-size: var(--normal-font-size);
-}
-a {
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-ul {
-    list-style: none;
-}
 .bd-grid {
     max-width: 1024px;
     display: grid;
@@ -64,7 +17,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #16262c44;
+    background: #16262c9d;
     z-index: var(--z-index);
 }
 
@@ -223,31 +176,6 @@ ul {
     
 }
 
-
-
-
-
-.btn a {
-    color: var(--white);
-    padding: .7rem .9rem;
-    border-radius: .25rem;
-    display: inline-block;
-    margin-top: .5rem;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    
-    
-}
-.btn-a a{
-    background: var(--tertiary-color);
-}
-.btn-b a{
-    background: var(--primary-color);
-}
-.btn a:hover {
-    background: var(--secondary-color);
-    letter-spacing: 4px;
-}
 /* About Section */
 .about-container {
     display: flex;
@@ -255,13 +183,21 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding: 5rem 1rem;
-    gap: 2rem;
+    font-size: .8rem;
+   
+}
+.about-content {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.about-content img {
+    border-radius: 1rem;
 }
 .about-note h3{
     color: var(--secondary-color);
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    padding-bottom: .7rem;
 }
 .about-note {
     display: flex;
@@ -269,12 +205,11 @@ ul {
     justify-content: center;
 }
 .about-intro {
-    
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+    font-size: .98rem;
+    padding-bottom: .7rem;
 }
 .about-note p {
-    padding-bottom: 1rem;
+    padding-bottom: .7rem;
 }
 
 /* Begin Section */
@@ -304,7 +239,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 1rem;
     width: 100%;
     height: 100%;
     color: var(--white);
@@ -325,6 +260,7 @@ ul {
     width: 100%;
     margin: 6rem 0;
     padding: 5rem 1rem;
+    font-size: ;
     
 }
 .koinonia-content {
@@ -338,9 +274,10 @@ ul {
     flex-direction: column;
     justify-content: center;
 }
-.koinonia-text h2{
-    color: var(--primary-color);
+.koinonia-text h3{
+    color: var(--secondary-color);
     padding-bottom: .3em;
+    font-size: 1.1rem;
 }
 .sermons {
     position: relative;
@@ -642,7 +579,10 @@ form .form-row .form-input{
     font-size: 0.8rem;
 }
 
-
+.fill {
+    padding-top: 5em;
+    width: 100%;
+}
 
 
 
