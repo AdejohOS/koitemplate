@@ -64,7 +64,7 @@ ul {
     background: var(--tertiary-color);
 }
 .btn-b a{
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 .btn a:hover {
     background: var(--secondary-color);
