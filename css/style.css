@@ -8,9 +8,10 @@
     --header-height: 4rem;
     --base-font-size: 1rem;
 
-    --primary-color: #2A0944;
-    --secondary-color: #3B185F;
-    --light-primary: #A12568;
+    --primary-color: #16262c;
+    --secondary-color: #1e3740;
+    --tertiary-color: #0b98cd;
+    
     --light-secondary: #FEC260;
     --white:#fff;
     --footer-color: #16262c;
@@ -63,7 +64,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--background-linear-gradient);
+    background: #16262c44;
     z-index: var(--z-index);
 }
 
@@ -88,7 +89,7 @@ ul {
         left: -100%;
         width: 80%;
         padding: 2rem 0;
-        background-color: var(--primary-color);
+        background-color: var(--footer-color);
         height: 100vh;
         transition: .5s;
         overflow-y: auto;
@@ -183,7 +184,7 @@ ul {
     position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -207,20 +208,19 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--light-primary);
+    background: #41606d;
     mix-blend-mode: overlay;
 }
-
 .hero-text {
     position: absolute;
     bottom: 3.5em;
 }
 .hero-text h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: .98em;
     font-weight: 900;
     max-width: 700px;
-    padding-bottom: 20px;
+    
 }
 
 
@@ -239,7 +239,7 @@ ul {
     
 }
 .btn-a a{
-    background: var(--light-primary);
+    background: var(--tertiary-color);
 }
 .btn-b a{
     background: var(--primary-color);
@@ -735,6 +735,7 @@ form .form-row .form-input{
 
     .hero {
         padding: 100px;
+        height: 100vh;
     }
     
     .hero-text h2 {
