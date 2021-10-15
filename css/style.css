@@ -584,7 +584,57 @@ form .form-row .form-input{
     padding-top: 5em;
     width: 100%;
 }
+.attend{
+    background: var(--primary-color);
+    margin-bottom: 6em;
+    
+   
+}
+.attend-container{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
 
+.attend svg {
+    display: block;
+}
+.attend-text{
+    color: var(--white);
+    padding: 4em 0;
+}
+.attend-text h3{
+    font-size: 1.5rem;
+    margin-bottom: .8em;
+}
+.curved-upper{
+    background: #fff;
+}
+
+.attend-branch .col{
+    margin-bottom: 4em;
+    border-radius: 1em;
+    background: var(--white);
+    overflow: hidden;
+}
+.col .branch-title {
+    background: var(--light-secondary);
+    font-size: 1.5rem;
+    padding: .8em 0;
+    color: var(--primary-color);
+    
+}
+.col .branch-time {
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: .8em 0;
+}
+.col .branch-location {
+    line-height: 1.2rem;
+    padding-bottom: 1.5em;
+    color: var(--tertiary-color);
+}
 
 
 @media screen and (min-width: 576px) {
