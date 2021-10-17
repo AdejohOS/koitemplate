@@ -700,7 +700,11 @@ form .form-row .form-input{
 .button{
     display: inline-block;
     padding: .6em 1em;
-    border: 1px solid #d0670b;
+    color: var(--light-secondary);
+    border: 1px solid var(--light-secondary);
+}
+.down{
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 576px) {
