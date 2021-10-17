@@ -671,6 +671,7 @@ form .form-row .form-input{
 }
 .why-we-give h3 {
     font-size: 1.1rem;
+    color: var(--primary-color);
 }
 .why-we-give-container{
     padding: 4em 1em;
@@ -707,6 +708,18 @@ form .form-row .form-input{
     margin-top: 1rem;
 }
 
+/* Radio */
+.radio-container {
+    text-align: center;
+    padding: 6em 1em;
+}
+.radio-content h3{
+    font-size: 1.1rem;
+}
+.radio-content i{
+    font-size: 2rem;
+    color: var(--tertiary-color)
+}
 @media screen and (min-width: 576px) {
 
     .nav {
@@ -897,7 +910,7 @@ form .form-row .form-input{
 footer{
     background: var(--footer-color);
     width: 100%;
-    color: #aec1c9;;
+    color: #aec1c9;
 }
 .footer-container {
     display: flex;
