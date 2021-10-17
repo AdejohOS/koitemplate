@@ -635,13 +635,69 @@ form .form-row .form-input{
     padding-bottom: 1.5em;
     color: var(--tertiary-color);
 }
-.photo-content {
+
+.photos {
+    
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.photos .photos-container {
+    width: 80%;
+    
+}
+/* Give page */
+.give{width: 100%;
+    height: 40vh;
+    display: flex;
+    
+}
+.give-text {
+    
     width: 80%;
     margin: 0 auto;
+    padding-top: 5em;
+    text-align: center;
+    z-index: 2;
+
 }
 
+.give-text h2 {
+    font-size: 1.5rem;
+}
+.why-we-give{
+    text-align: center;
+    
+}
+.why-we-give h3 {
+    font-size: 1.1rem;
+}
+.why-we-give-container{
+    padding: 4em 1em;
+}
+.ways-to-give{
+    background: #eef4fe;
+    padding: 4em 1em;
+}
+.ways-to-give-header{
+    margin-bottom: 3em;
+}
+.ways-to-give-item{
+    background: var(--white);
+    margin-bottom: 3em;
+    padding: 2em;
+    border-radius: 1.2rem;
+}
+.ways-to-give-item i{
+    font-size: 2rem;
+    color: var(--tertiary-color);
+}
+.ways-to-give-item h4{
+    font-size: 1rem;
+}
 
 @media screen and (min-width: 576px) {
+
     .nav {
         width: 288px;
     }
@@ -767,8 +823,20 @@ form .form-row .form-input{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    
+    .attend-container{
+        width: 100%;
+        max-width: 1000px;
+    }
+    .attend-branch {
+        
+        display: flex;
+        gap: 6em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .attend .col{
+        width: 100%;
+    }
 
     
 

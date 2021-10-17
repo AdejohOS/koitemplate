@@ -33,3 +33,6 @@ const r = rolly({
       duration: 1500 //Global duration
   });
 
+//Flipster plugin
+
+$('.photos-container').flipster();
