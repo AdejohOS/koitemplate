@@ -702,7 +702,10 @@ form .form-row .form-input{
     font-size: 1rem;
     color: var(--primary-color);
 }
-
+.ways-to-give-item span{
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
 
 .down{
     margin-top: 1rem;
