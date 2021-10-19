@@ -710,6 +710,11 @@ form .form-row .form-input{
     border: 1px solid var(--tertiary-color);
     
 }
+.button, input[type="submit"]{
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
 .down{
     margin-top: 1rem;
 }
