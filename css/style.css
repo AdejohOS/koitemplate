@@ -536,6 +536,7 @@ form .form-row .form-input{
 
   ::-webkit-input-placeholder{
       color: var(--tertiary-color);
+      font-weight: 100;
   }
   .contact-info {
     padding: 1.7rem 1.6rem;
@@ -707,7 +708,7 @@ form .form-row .form-input{
     padding: .6em 1em;
     color: var(--tertiary-color);
     border: 1px solid var(--tertiary-color);
-    font-weight: 700;
+    
 }
 .down{
     margin-top: 1rem;
