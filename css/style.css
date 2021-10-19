@@ -212,6 +212,48 @@
 .about-note p {
     padding-bottom: .7rem;
 }
+.about-koinonia {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    padding: 4em 2em;
+}
+
+.about-koinonia .about-koinonia-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.about-koinonia-content {
+    width: 100%;
+    z-index: 2;
+}
+.about-koinonia-video {
+    width: 100%;
+}
+
+.about-text h3{
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+
+.mission{
+    padding: 2em 0;
+}
+.vission h4, .mission h4 {
+    font-size: 1rem;
+}
+
+
 
 /* Begin Section */
 .begin {
@@ -323,6 +365,12 @@
     max-height: 300px;
     overflow-y: scroll;
     
+}
+.search-title h3{
+    font-size: 1.1rem;
+}
+.search-title p{
+    font-size: .9rem;
 }
 form .form-row .form-input{
     margin-bottom: 15px;
