@@ -43,7 +43,7 @@
         width: 80%;
         font-size: 1rem;
         padding: 2rem 0;
-        background-color: var(--footer-color);
+        background-color: var(--primary-color);
         height: 100vh;
         transition: .5s;
         overflow-y: auto;
@@ -471,7 +471,7 @@ form .form-row .form-input{
     position: relative;
     width: 100%;
     padding: 6rem 1rem;
-    background-color: #ebe6e6;
+    
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -480,27 +480,27 @@ form .form-row .form-input{
 .contact-container {
     width: 100%;
     max-width: 900px;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     
   }
 .contact-form {
-    background: var(--primary-color);
+    background: var(--grey-bg);
 }
 .form-action {
     padding: 2.3rem 2.2rem;
   }
 .form-title {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 1.5rem;
     
     
     
 }
 .location-title {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 1.2rem;
     
     
@@ -514,10 +514,10 @@ form .form-row .form-input{
   .input {
     width: 100%;
     outline: none;
-    border: 2px solid #fafafa;
+    border: 1px solid var(--tertiary-color);
     background: none;
     padding: 0.45rem 1.2rem;
-    color: #fff;
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -533,21 +533,26 @@ form .form-row .form-input{
     resize: none;
     overflow-y: auto;
   }
+
+  ::-webkit-input-placeholder{
+      color: var(--tertiary-color);
+  }
   .contact-info {
     padding: 1.7rem 1.6rem;
     
   }
   .contact-title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
   }
   .contact-title.a{
-      color: var(--primary-color);
+      color: var(--secondary-color);
   }
   .contact-title.b{
-      color: var(--white);
+      color: var(--secondary-color);
   }
   .item h4{
-      color: var(--primary-color);
+      color: var(--secondary-color);
+      font-size: 1rem;
   }
   .item{
       padding-top: 1rem;
@@ -566,11 +571,10 @@ form .form-row .form-input{
     font-size: 1.15rem;
 }
 .social-media i {
-    font-size: 1rem;
-    background: var(--secondary-color);
-    color: var(--white);
-    padding: .6rem .8rem;
-    border-radius: .25rem;
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    
+    
 }
 .contact-info h3{
     color: var(--secondary-color);
@@ -677,7 +681,7 @@ form .form-row .form-input{
     padding: 4em 1em;
 }
 .ways-to-give{
-    background: #eef4fe;
+    background: var(--grey-bg);
     padding: 4em 1em;
 }
 .ways-to-give-header{
@@ -701,8 +705,9 @@ form .form-row .form-input{
 .button{
     display: inline-block;
     padding: .6em 1em;
-    color: var(--light-secondary);
-    border: 1px solid var(--light-secondary);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    font-weight: 700;
 }
 .down{
     margin-top: 1rem;
@@ -908,7 +913,7 @@ form .form-row .form-input{
 }
 
 footer{
-    background: var(--footer-color);
+    background: var(--primary-color);
     width: 100%;
     color: #aec1c9;
 }
