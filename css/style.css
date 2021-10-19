@@ -471,7 +471,6 @@ form .form-row .form-input{
     position: relative;
     width: 100%;
     padding: 6rem 1rem;
-    
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -693,6 +692,7 @@ form .form-row .form-input{
     margin-bottom: 3em;
     padding: 2em;
     border-radius: 1.2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 .ways-to-give-item i{
     font-size: 2rem;
@@ -703,18 +703,7 @@ form .form-row .form-input{
     color: var(--primary-color);
 }
 
-.button{
-    display: inline-block;
-    padding: .6em 1em;
-    color: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
-    
-}
-.button, input[type="submit"]{
-    background: none;
-    cursor: pointer;
-    font: inherit;
-}
+
 .down{
     margin-top: 1rem;
 }
