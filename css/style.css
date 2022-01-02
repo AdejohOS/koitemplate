@@ -216,14 +216,15 @@
     position: relative;
     top: 0;
     left: 0;
-    
     width: 100%;
     display: flex;
     align-items: center;
-    color: var(--white);
-    padding: 4em 2em;
+    
 }
-
+.about-text-intro{
+    background: var(--grey-bg-color);
+    padding: 5em 2em;
+}
 .about-koinonia .about-koinonia-img {
     position: absolute;
     top: 0;
@@ -246,11 +247,15 @@
     padding-bottom: 1em;
 }
 
-.mission{
-    padding: 2em 0;
+.koinonia-statement{
+    padding: 5em 2em;
+}
+.vission{
+    padding-bottom: 2em;
 }
 .vission h4, .mission h4 {
     font-size: 1rem;
+    
 }
 
 
@@ -771,6 +776,58 @@ form .form-row .form-input{
     font-size: 2rem;
     color: var(--tertiary-color)
 }
+/* Testimonials */
+.testimonials{
+    padding: 0 1rem;
+    height: 200px;
+}
+.header-intro{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+ }
+ .swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important;
+  }
+
+.testimonial-data,
+.testimonial-header{
+    display: flex;
+}
+.testimonial-data{
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.testimonial-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+.testimonial_name{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.testimonial-location{
+    font-size: 0.7rem;
+    color: rgb(119, 118, 118);
+}
+.testimonial-description{
+    margin-bottom: 1em;
+}
+
+
+
+
+
 @media screen and (min-width: 576px) {
 
     .nav {
@@ -962,6 +1019,7 @@ footer{
     background: var(--primary-color);
     width: 100%;
     color: #aec1c9;
+    
 }
 .footer-container {
     display: flex;

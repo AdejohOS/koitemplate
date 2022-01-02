@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/slick-theme.css">
 
-    <link rel="stylesheet" href="/css/jquery.flipster.min.css">
+    <!--Swiper css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!--End Swiper css-->
+
+    
+
     
     
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
@@ -44,9 +47,10 @@
                     <div class="nav-menu">
                         <ul class="nav-list">
                             <li class="nav-item"><a href="#" class="nav-link active"> Home </a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"> About Us </a></li>
-
+                            <li class="nav-item"><a href="/pages/about-us.html" class="nav-link"> About Us </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"> Welfare </a></li>
                             
+                            <!--
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-link">Units <i class='bx bxs-chevron-down dropdown-icon' ></i></a>
                                 
@@ -57,9 +61,10 @@
                                     <li class="dropdown-item"><a href="#" class="nav-link">Welfare</a></li>
 
                                 </ul>
-                            </li>
+                            </li>-->
 
                             <li class="nav-item"><a href="pages/sermons.html" class="nav-link"> Sermons</a></li>
+                            <li class="nav-item"><a href="pages/sermons.html" class="nav-link"> Testimonies</a></li>
                             <li class="nav-item"><a href="pages/contact.html" class="nav-link"> Contact </a></li>
 
                         </ul>
@@ -96,7 +101,7 @@
                 <div class="about-note" data-aos="fade-up">
                     <h3> <span class="underline">Koinonia Network International</h3>
                     <p class="about-intro">It's Intimacy, Partnership and Fellowship!!! </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus delectus, dolor veniam quam beatae libero, inventore aliquid, optio autem soluta in explicabo porro!</p>
+                    <p>KOINONIA is a weekly programme organised by Eternity Network International where people come to experience WORSHIP, WORD, MIRACLES AND LOVE, experience true intimacy with the Holy spirit and learn to be with Him, be like Him and represent Him.</p>
                     <div class="btn btn-b"><a href="/pages/about-us.html">Learn More &#8594</a></div>
                 </div>
             </div>
@@ -148,7 +153,7 @@
                     <p>Not sure where to begin your journey?</p>
                     <h2>Start Here!!</h2>
                     <div class="btn btn-a">
-                    <a href="">Get Started</a>
+                    <a href="">Get Started &#8594</a>
                     </div>
                 </div>
                 
@@ -163,7 +168,7 @@
                 <h3>Live Stream Our Services</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquid accusamus ab qui eveniet facere consectetur veniam, sed rerum laboriosam repudiandae animi consequatur quis molestias.</p>
                 <div class="btn btn-b">
-                    <a href="https://www.youtube.com/Koinonia Global" target="_blank">Watch Live</a>
+                    <a href="https://www.youtube.com/Koinonia Global" target="_blank">Watch Live &#8594</a>
                 </div>
             </div>
         </section>
@@ -191,8 +196,70 @@
             </div>
         </section>-->
 
-        
-          
+            <!--Testimony Section-->
+          <section class="testimonials">
+              <div class="header-intro">
+                <h3>Testimonies</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="testimonial-container swiper mySwiper">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="testimonial-content swiper-slide">
+                            <div class="testimonial-data">
+                                <div class="testimonial-header">
+                                    <img src="/images/F.jpg" alt="" class="testimonial-img">
+                                <div>
+                                    <h4 class="testimonial_name">Peterside Abdulrahim</h4>
+                                    <p class="testimonial-location">Lagos, Nigeria</p>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="testimonial-description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptas est adipisci cumque quaerat quos. Eaque ad optio voluptas provident, ipsam ex culpa repellat at obcaecati officia aliquam harum deleniti.
+                            </p>
+                        </div>
+
+                        <div class="testimonial-content swiper-slide">
+                            <div class="testimonial-data">
+                                <div class="testimonial-header">
+                                    <img src="/images/g.jpg" alt="" class="testimonial-img">
+                                <div>
+                                    <h4 class="testimonial_name">Jenna Udem Lawson</h4>
+                                    <p class="testimony-location">Accra, Ghana</p>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="testimonial-description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptas est adipisci cumque quaerat quos. Eaque ad optio voluptas provident, ipsam ex culpa repellat at obcaecati officia aliquam harum deleniti.
+                            </p>
+                        </div>
+
+                        <div class="testimonial-content swiper-slide">
+                            <div class="testimonial-data">
+                                <div class="testimonial-header">
+                                    <img src="/images/h.jpg" alt="" class="testimonial-img">
+                                <div>
+                                    <h4 class="testimonial_name">Cecilia Abraham</h4>
+                                    <p class="testimony-location">Zaria, Nigeria</p>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="testimonial-description">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptas est adipisci cumque quaerat quos. Eaque ad optio voluptas provident, ipsam ex culpa repellat at obcaecati officia aliquam harum deleniti.
+                            </p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>  
+                </div>
+             
+               
+              
+          </section>
+
+
         <footer class="footer" data-scene>
             <div class="footer-container">
                 <div class="social">
@@ -210,13 +277,16 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/js/slick.min.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--<script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>-->
     
-   
+   <!--Swiper Js -->
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <!-- End Swiper Js -->
 
     <script src="js/app.js"></script>
 

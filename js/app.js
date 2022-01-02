@@ -22,17 +22,39 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-const r = rolly({
-    view: document.querySelector('.app'),
-    native: true,
-    // other options
-  });
-  r.init();
+//const r = rolly({
+ //   view: document.querySelector('.app'),
+ //   native: true,
+ //   // other options
+ // });
+ // r.init();
 
-  AOS.init({
-      duration: 1500 //Global duration
-  });
+ // AOS.init({
+//      duration: 1500 //Global duration
+//  });
 
 //Flipster plugin
 
-$('.photos-container').flipster();
+//$('.photos-container').flipster();
+
+
+//Swiper for testimonies
+let swiper = new Swiper(".mySwiper", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+      568: {
+          slidesPerView: 2,
+
+      }
+  },
+  mousewheel: true,
+  keyboard: true,
+});
