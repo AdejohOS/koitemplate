@@ -804,7 +804,7 @@ form .form-row .form-input{
 }
 .upcoming-container {
   width: 90%;
-  padding: 10px 20px;
+  padding: 10px 30px;
   
 }
 
@@ -865,11 +865,12 @@ form .form-row .form-input{
   font-size: 2rem;
 }
 .swiper-button-next, .swiper-button-prev{
-    color: var(--base-color) !important;
+    color: #dadddd !important;
     
 }
 .swiper-button-prev{
     left: 26px !important;
+    
 }
 .swiper-button-next{
     right: 26px !important;
