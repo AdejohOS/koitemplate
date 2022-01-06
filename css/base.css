@@ -20,9 +20,11 @@
 
     --base-font: 'Poppins', sans-serif;
     --nav-name-font-size: 1.5rem;
-    --normal-font-size: .8rem;
+    --normal-font-size: .9rem;
+
 
     --z-index: 100;
+    --base-color: #444444;
 
 }
 * {
@@ -33,6 +35,9 @@
     
     
 }
+.title-header {
+    font-size: 1.5rem;
+}
 
 
 p {
@@ -41,7 +46,7 @@ p {
 body, input, textarea {
     font-family: var(--base-font);
     font-size: var(--base-font-size);
-    color: #444444;
+    color: var(--base-color);
     font-size: var(--normal-font-size);
 }
 a {
@@ -57,7 +62,7 @@ ul {
 
 .btn a {
     color: var(--white);
-    padding: .7rem .9rem;
+    padding: .5rem .9rem;
     border-radius: .25rem;
     display: inline-block;
     margin-top: .5rem;

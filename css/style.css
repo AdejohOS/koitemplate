@@ -308,7 +308,7 @@
     width: 100%;
     margin: 6rem 0;
     padding: 5rem 1rem;
-    font-size: ;
+    
     
 }
 .koinonia-content {
@@ -785,18 +785,107 @@ form .form-row .form-input{
     text-align: center;
     padding-bottom: 1em;
 }
-.swiper {
+
+/* Upcoming Events*/
+.events{
+    text-align: center;
+    margin-bottom: 5em;
     width: 100%;
-    height: 100%;
 }
-.swiper-slide{
+.upcoming {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    border-radius: 1rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
- }
- .swiper-pagination-bullet-active {
-    background-color: var(--primary-color) !important;
+    
+    
+
+}
+.upcoming-container {
+  width: 90%;
+  padding: 10px 20px;
+  
+}
+
+.upcoming-container .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+.env-swiper{
+    margin: 4em 0;
+}
+
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.upcoming-container .swiper-slide {
+  position: relative;
+  border-radius: 10px;
+  text-align: start;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+.swiper-slide .event-item-text {
+  padding: 2em 0.3em 3em 1em;
+}
+.swiper-slide .event-item-text h3{
+    padding-bottom: 1em;
   }
+.event-item-date{
+  position: relative;
+}
+.event-item-date-item {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: #41606da8;
+  color: var(--white);
+  padding: 0.6em 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+.event-item-date-item p{
+  font-size: 1.5rem;
+}
+.event-item-text p{
+    padding-bottom: 1em;
+}
+.event-item-date-item h4 {
+  font-size: 2rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--base-color) !important;
+    
+}
+.swiper-button-prev{
+    left: 26px !important;
+}
+.swiper-button-next{
+    right: 26px !important;
+}
+.swiper-pagination {
+    padding-top: 6em !important;
+    
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--base-color) !important;
+}
+
+
+
+/* End Upcoming Events*/ 
+  
 
 .testimonial-data,
 .testimonial-header{
@@ -823,6 +912,8 @@ form .form-row .form-input{
 .testimonial-description{
     margin-bottom: 1em;
 }
+
+
 
 
 

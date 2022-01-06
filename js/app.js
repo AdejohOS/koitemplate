@@ -39,22 +39,39 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 //Swiper for testimonies
-let swiper = new Swiper(".mySwiper", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
+let swiper = new Swiper('.mySwiper', {
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	},
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// init: false,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	  dynamicBullets: true,
+	},
 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable:true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-      568: {
-          slidesPerView: 2,
-
-      }
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+  
+	breakpoints: {
+	  620: {
+		slidesPerView: 1,
+		spaceBetween: 20,
+	  },
+	  680: {
+		slidesPerView: 2,
+		spaceBetween: 40,
+	  },
+	  920: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	  },
+	  1240: {
+		slidesPerView: 4,
+		spaceBetween: 50,
+	  },
+	},
+	mousewheel: true,
+  	keyboard: true, 
+    });
