@@ -303,8 +303,9 @@
     padding-bottom: 1rem;
 }
 
+/** Stream Koinonia**/
 .koinonia {
-    background: #eef4fe;
+    background: var(--grey-bg-color);
     width: 100%;
     margin: 6rem 0;
     padding: 5rem 1rem;
@@ -777,17 +778,68 @@ form .form-row .form-input{
     color: var(--tertiary-color)
 }
 /* Testimonials */
-.testimonials{
-    padding: 0 1rem;
-    height: 200px;
+.testimonies{
+    position: relative;  
 }
-.header-intro{
+.testimonies-container{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 4em;
+}
+.testimonies-container .title-header {
+    padding-bottom: 3em;
+}
+.testimonial-content {
+    padding: 3em 1em;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+.testimonial-data,
+.testimonial-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 1em;
+}
+.testimonial-data{
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.testimonial-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+.testimonial_name{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.testimonial-location{
+    font-size: 0.8rem;
+    color: rgb(119, 118, 118);
+}
+.testimonial-description{
+    padding: 1em 0;
+}
+
+.comment i{
+    font-size: 1.5rem;
+}
+.comment-right i{
+    display: flex;
+    justify-content: flex-end;
+}
+.comment-left i{
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Upcoming Events*/
 .events{
+    position: relative;
     text-align: center;
     margin-bottom: 5em;
     width: 100%;
@@ -821,7 +873,7 @@ form .form-row .form-input{
 
 
 
-.swiper-slide img {
+.upcoming .swiper-slide img {
   display: block;
   width: 100%;
   height: 180px;
@@ -868,14 +920,14 @@ form .form-row .form-input{
     color: #dadddd !important;
     
 }
-.swiper-button-prev{
+.upcoming .swiper-button-prev{
     left: 26px !important;
     
 }
 .swiper-button-next{
     right: 26px !important;
 }
-.swiper-pagination {
+.upcoming .swiper-pagination {
     padding-top: 6em !important;
     
 }
@@ -888,31 +940,7 @@ form .form-row .form-input{
 /* End Upcoming Events*/ 
   
 
-.testimonial-data,
-.testimonial-header{
-    display: flex;
-}
-.testimonial-data{
-    justify-content: space-between;
-    margin-bottom: 1em;
-}
-.testimonial-img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 1em;
-}
-.testimonial_name{
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-.testimonial-location{
-    font-size: 0.7rem;
-    color: rgb(119, 118, 118);
-}
-.testimonial-description{
-    margin-bottom: 1em;
-}
+
 
 
 

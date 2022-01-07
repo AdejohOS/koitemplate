@@ -26,6 +26,8 @@
     --z-index: 100;
     --base-color: #444444;
 
+    --border-radius: 10px;
+
 }
 * {
     box-sizing: border-box;
@@ -37,6 +39,7 @@
 }
 .title-header {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 
@@ -61,25 +64,30 @@ ul {
 }
 
 .btn a {
-    color: var(--white);
-    padding: .5rem .9rem;
-    border-radius: .25rem;
+    
+    padding: .4rem .9rem;
+    border-radius: .2rem;
     display: inline-block;
     margin-top: .5rem;
     letter-spacing: 2px;
-    transition: 0.5s;
+    
+    
     
     
 }
 .btn-a a{
     background: var(--tertiary-color);
+    color: var(--white);
+    
 }
 .btn-b a{
-    background: var(--secondary-color);
+    border: 2px solid var(--base-color);
+    color: var(--base-color);
 }
-.btn a:hover {
-    background: var(--secondary-color);
-    letter-spacing: 4px;
+.btn-b a:hover {
+    color: var(--base-color);
+    font-weight: bold;
+    
 }
 
 .button{
