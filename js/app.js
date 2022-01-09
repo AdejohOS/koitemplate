@@ -39,7 +39,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 //Swiper for testimonies
-let swiper = new Swiper('.mySwiper', {
+let swiperEvents = new Swiper('.upcomingEvents', {
+	cssMode: true,
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev'
@@ -48,7 +49,7 @@ let swiper = new Swiper('.mySwiper', {
 	spaceBetween: 10,
 	// init: false,
 	pagination: {
-	  el: '.swiper-pagination',
+	  el: '.swiper-pagination-upcoming',
 	  clickable: true,
 	  dynamicBullets: true,
 	},
@@ -75,3 +76,21 @@ let swiper = new Swiper('.mySwiper', {
 	mousewheel: true,
   	keyboard: true, 
     });
+
+
+
+	//Swiper for testimonies
+
+	let swiperTestimonies = new Swiper('.koiTestimonies', {
+		        
+		loop: true,
+		grabCursor: true,
+		spaceBetween:48,
+
+		pagination: {
+			el: '.swiper-pagination-testimonies',
+			clickable: true,
+			dynamicBullets:true,
+		}
+
+		});

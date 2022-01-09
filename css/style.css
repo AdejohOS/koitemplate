@@ -535,7 +535,7 @@ form .form-row .form-input{
     max-width: 900px;
     background-color: var(--white);
     border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     overflow: hidden;
     
   }
@@ -693,6 +693,9 @@ form .form-row .form-input{
     padding-bottom: 1.5em;
     color: var(--tertiary-color);
 }
+.col .directions {
+    padding-bottom: 1em;
+}
 
 .photos {
     
@@ -782,6 +785,7 @@ form .form-row .form-input{
     position: relative;  
 }
 .testimonies-container{
+    position: relative;
     width: 90%;
     margin: 0 auto;
     padding-bottom: 4em;
@@ -790,22 +794,23 @@ form .form-row .form-input{
     padding-bottom: 3em;
 }
 .testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
     padding: 3em 1em;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: var(--border-radius);
 }
-.testimonial-data,
+
 .testimonial-header{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    
 }
-.testimonial-data{
-    justify-content: space-between;
-    margin-bottom: 1em;
-}
+
 
 .testimonial-img{
     width: 100px;
@@ -836,6 +841,9 @@ form .form-row .form-input{
     display: flex;
     justify-content: flex-start;
 }
+.testimonies-container .swiper-pagination-testimonies {
+    bottom: 0;
+}
 
 /* Upcoming Events*/
 .events{
@@ -849,8 +857,6 @@ form .form-row .form-input{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
     
 
 }
@@ -867,8 +873,19 @@ form .form-row .form-input{
   
   
 }
+
+.upcoming-container {
+    overflow: initial;
+}
 .env-swiper{
     margin: 4em 0;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    flex-direction: column;
 }
 
 
@@ -920,16 +937,25 @@ form .form-row .form-input{
     color: #dadddd !important;
     
 }
+.upcoming .swiper-button-prev::after,
+.upcoming .swiper-button-next::after {
+    content: '';
+}
+.upcoming .swiper-upcoming-icon {
+    font-size: 2rem;
+    padding: 0.1em 0.3em;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
 .upcoming .swiper-button-prev{
-    left: 26px !important;
+    left: 20px;
     
 }
-.swiper-button-next{
-    right: 26px !important;
+.upcoming .swiper-button-next{
+    right: 20px;
 }
-.upcoming .swiper-pagination {
-    padding-top: 6em !important;
-    
+.upcoming .swiper-horizontal > .swiper-pagination-bullets {
+    bottom: 2.5rem !important;
 }
 .swiper-pagination-bullet-active {
     background-color: var(--base-color) !important;
