@@ -267,7 +267,7 @@
     left: 0;
     width: 100%;
     height: 60vh;
-    margin-bottom: 6rem;
+    
     
 }
 
@@ -306,9 +306,8 @@
 /** Stream Koinonia**/
 .koinonia {
     background: var(--grey-bg-color);
-    width: 100%;
-    margin: 6rem 0;
-    padding: 5rem 1rem;
+    width: 100%; 
+    padding: 7em 1em;
     
     
 }
@@ -322,11 +321,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 2em;
 }
 .koinonia-text h3{
     color: var(--secondary-color);
-    padding-bottom: .3em;
+    padding-bottom: 1em;
     font-size: 1.1rem;
+}
+
+.koinonia-text .btn {
+    padding: 2em 0;
 }
 .sermons {
     position: relative;
@@ -540,7 +544,7 @@ form .form-row .form-input{
     
   }
 .contact-form {
-    background: var(--grey-bg);
+    background: var(--grey-bg-color);
 }
 .form-action {
     padding: 2.3rem 2.2rem;
@@ -567,7 +571,7 @@ form .form-row .form-input{
   .input {
     width: 100%;
     outline: none;
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--base-color);
     background: none;
     padding: 0.45rem 1.2rem;
     color: var(--primary-color);
@@ -588,7 +592,7 @@ form .form-row .form-input{
   }
 
   ::-webkit-input-placeholder{
-      color: var(--tertiary-color);
+      color: var(--base-color);
       font-weight: 100;
   }
   .contact-info {
@@ -782,7 +786,8 @@ form .form-row .form-input{
 }
 /* Testimonials */
 .testimonies{
-    position: relative;  
+    position: relative;
+    padding-bottom: 5em;
 }
 .testimonies-container{
     position: relative;
@@ -858,6 +863,7 @@ form .form-row .form-input{
     align-items: center;
     justify-content: center;
     
+    
 
 }
 .upcoming-container {
@@ -873,7 +879,9 @@ form .form-row .form-input{
   
   
 }
-
+.events .title-header{
+    padding-top: 5rem;
+}
 .upcoming-container {
     overflow: initial;
 }
@@ -946,6 +954,7 @@ form .form-row .form-input{
     padding: 0.1em 0.3em;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
+    outline: none;
 }
 .upcoming .swiper-button-prev{
     left: 20px;

@@ -91,6 +91,9 @@ let swiperEvents = new Swiper('.upcomingEvents', {
 			el: '.swiper-pagination-testimonies',
 			clickable: true,
 			dynamicBullets:true,
-		}
+		},
+		autoplay: {
+			delay: 5000,
+		  },
 
 		});

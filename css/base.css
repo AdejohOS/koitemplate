@@ -38,6 +38,9 @@
     
     
 }
+html {
+    scroll-behavior: smooth;
+}
 .title-header {
     font-size: 1.5rem;
     text-align: center;
@@ -45,7 +48,7 @@
 
 
 p {
-    line-height: 1.5em;
+    line-height: 2em;
 }
 body, input, textarea {
     font-family: var(--base-font);
@@ -66,10 +69,10 @@ ul {
 
 .btn a {
     
-    padding: .4rem .9rem;
-    border-radius: .2rem;
+    padding: .4em .9em;
+    border-radius: .2em;
     display: inline-block;
-    margin-top: .5rem;
+    margin-top: .5em;
     letter-spacing: 2px;
     
     
@@ -93,9 +96,12 @@ ul {
 
 .button{
     display: inline-block;
-    padding: .6em 1em;
-    color: var(--tertiary-color);
-    border: 1px solid var(--tertiary-color);
+    padding: .4em .9em;
+    color: var(--base-color);
+    letter-spacing: 2px;
+    margin-top: .5em;
+    border-radius: .2em;
+    border: 2px solid var(--base-color);
     
 }
 .button, input[type="submit"]{
