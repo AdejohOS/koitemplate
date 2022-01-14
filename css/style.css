@@ -10,7 +10,7 @@
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     height: var(--header-height);
     width: 100%;
     padding: 0 1rem;
@@ -19,6 +19,11 @@
     align-items: center;
     background: #16262c9d;
     z-index: var(--z-index);
+}
+.header.sticky {
+    background: #86869c63;
+    padding: 1em 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .header-logo img {
