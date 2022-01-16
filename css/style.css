@@ -20,11 +20,6 @@
     background: #16262c9d;
     z-index: var(--z-index);
 }
-.header.sticky {
-    background: #86869c63;
-    padding: 1em 0;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
 
 .header-logo img {
     width: 150px;
@@ -309,34 +304,48 @@
 }
 
 /** Stream Koinonia**/
-.koinonia {
+.koinonia-live {
+    position: relative;
     background: var(--grey-bg-color);
     width: 100%; 
-    padding: 7em 1em;
     
-    
-}
-.koinonia-content {
-    padding-bottom: .8em;
-}
-.you-img{
-    border-radius: .5rem;
-}
-.koinonia-text {
+    padding: 7em 2em;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 2em;
+   
+    
+    
 }
-.koinonia-text h3{
-    color: var(--secondary-color);
-    padding-bottom: 1em;
-    font-size: 1.1rem;
+.koinonia-live-content {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+.koinonia-live-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /**or 4:3 aspect ratio at 75%**/
+}
+.koinonia-live-youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.koinonia-text .btn {
-    padding: 2em 0;
+
+.koinonia-live-content .title-header {
+    padding-bottom: 3em;
 }
+.koinonia-live-content .btn {
+    padding-top: 3em;
+}
+
 .sermons {
     position: relative;
     top: 0rem;
@@ -482,10 +491,7 @@ form .form-row .form-input{
     width: 100%;
     height: 20%;
     display: flex;
-    gap: .5em;
-    
-
-    
+    gap: .5em;   
 }
 .message .message-content .box h2{
     font-size: 1.1rem;
@@ -807,7 +813,7 @@ form .form-row .form-input{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
-    padding: 3em 1em;
+    padding: 3em 2em;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: var(--border-radius);
 }
@@ -1018,6 +1024,9 @@ form .form-row .form-input{
         justify-content: space-between;
         margin: 20px 0 12px 0;
     }
+    .testimonies-container {
+        max-width: 400px;
+    }
 
     
 }
@@ -1128,6 +1137,10 @@ form .form-row .form-input{
     }
     .attend .col{
         width: 100%;
+    }
+
+    .testimonies-container {
+        max-width: 700px;
     }
 
     
