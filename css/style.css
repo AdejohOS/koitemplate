@@ -815,18 +815,18 @@ form .form-row .form-input{
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 5em;
-    max-width: 800px;
+    padding-bottom: 2em;
+    
 }
 .belivers-content h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     line-height: .9;
     font-weight: 800;
     margin-bottom: .3em;
 }
 .belivers-content p{
     font-family: var(--secondary-font);
-    font-size: 2em;
+    font-size: 1.2rem;
 }
 /* End Community */
 
@@ -1305,6 +1305,19 @@ form .form-row .form-input{
     .about-note p {
         padding-bottom: 1rem;
     }
+
+    .belivers-content h1 {
+    font-size: 5rem;
+    line-height: .9;
+    margin-bottom: .3em;
+}
+.belivers-content p{
+    font-size: 2rem;
+}
+.belivers-content {
+    padding-bottom: 5em;
+    max-width: 800px;
+}
     
 
 }
