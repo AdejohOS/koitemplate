@@ -299,6 +299,7 @@
     padding-bottom: 1rem;
 }
 .begin-text p {
+    font-family: var(--secondary-font);
     font-size: 1.2rem;
     padding-bottom: 1rem;
 }
@@ -345,6 +346,8 @@
 .koinonia-live-content .btn {
     padding-top: 3em;
 }
+
+
 
 .sermons {
     position: relative;
@@ -514,7 +517,7 @@ form .form-row .form-input{
     text-align:center;   
 }
 
-.message .message-content .box  .col3 i,a{
+.message .message-content .box  .col3 i{
     color: #d0670b;
 }
 
@@ -553,6 +556,9 @@ form .form-row .form-input{
     box-shadow: var(--box-shadow);
     overflow: hidden;
     
+  }
+  .item a{
+      color: var(--base-color);
   }
 .contact-form {
     background: var(--grey-bg-color);
@@ -795,10 +801,41 @@ form .form-row .form-input{
     font-size: 2rem;
     color: var(--tertiary-color)
 }
+
+/* Community */
+ .belivers{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     
+ }
+
+.belivers-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5em;
+    max-width: 800px;
+}
+.belivers-content h1 {
+    font-size: 5rem;
+    line-height: .9;
+    font-weight: 800;
+    margin-bottom: .3em;
+}
+.belivers-content p{
+    font-family: var(--secondary-font);
+    font-size: 2em;
+}
+/* End Community */
+
+
 /* Testimonials */
 .testimonies{
     position: relative;
     padding-bottom: 5em;
+    
 }
 .testimonies-container{
     position: relative;
@@ -829,8 +866,8 @@ form .form-row .form-input{
 
 
 .testimonial-img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-right: 1em;
 }
@@ -986,7 +1023,91 @@ form .form-row .form-input{
 /* End Upcoming Events*/ 
   
 
+/** Blog **/
 
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-showcase {
+    background: var(--grey-bg-color);
+    padding: 7em 0;
+    
+}
+
+.blog-showcase-container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.showcase-featured {
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.showcase-img {
+    flex-basis: 50%;
+    
+    
+    
+}
+.koinonia-blog{
+    padding: 7em 0;
+}
+.showcase-img-placer{
+    border-radius: 10px;
+}
+.showcase-img img{
+    height: 100%;
+    object-fit: contain;
+    
+    
+}
+.blog-showcase-container h2 {
+    margin-bottom: 2em;
+}
+.blog-showcase-details {
+    flex-basis: 46%;
+    
+}
+.blog-showcase-details h3 {
+    font-size: 2.3rem;
+    margin-bottom: .4em;
+}
+.showcase-con {
+    margin-bottom: 1em;
+}
+.blog-showcase-others {
+ width: 100%;
+ display: flex;
+ gap: 4%;
+ flex-wrap: wrap;
+ padding: 6em 1em;
+ 
+}
+.blog-content {
+    position: relative;
+    display: flex;
+    gap: 4%;
+    
+}
+
+
+.koinonia-blog{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/** End Blog **/
 
 
 
@@ -1025,7 +1146,7 @@ form .form-row .form-input{
         margin: 20px 0 12px 0;
     }
     .testimonies-container {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     
@@ -1108,7 +1229,7 @@ form .form-row .form-input{
         padding-bottom: 1.5rem;
     }
     .begin-text p {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         padding-bottom: 1.5rem;
     }
 

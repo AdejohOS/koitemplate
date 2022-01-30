@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
@@ -19,8 +20,12 @@
     
 
     --base-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Satisfy', cursive;
+
     --nav-name-font-size: 1.5rem;
     --normal-font-size: .9rem;
+    --sub-title-large: 2rem;
+    --sub-title-small: 1.5rem;
 
 
     --z-index: 100;
@@ -30,7 +35,9 @@
     --box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 
 }
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -92,6 +99,21 @@ ul {
     color: var(--base-color);
     font-weight: bold;
     
+}
+.sub-title{
+    display: inline-block;
+    font-size: var(--sub-title-large);
+    
+}
+.sub-title::after{
+    content: '';
+    width: 50%;
+    height: 5px;
+    background: var(--light-secondary);
+    display: block;
+}
+.date {
+    font-size: .7rem;
 }
 
 .button{
