@@ -1171,6 +1171,52 @@ form .form-row .form-input{
         
     }
 
+
+    .my-events-page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .my-events-page-container {
+        width: 90%;
+        margin: 4em 0;
+        
+    }
+    .my-events-page-content {
+        display: flex;
+        gap: 4%;
+        flex-wrap: wrap;
+    }
+    .my-events-page-text {
+        flex-basis: 96%;
+        margin-bottom: 1em;
+    }
+    .my-events-page-img{
+        flex-basis: 96%;
+        object-fit: contain;
+    }
+    .my-events-page-img img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .my-events-page-top {
+        margin-bottom: 2em;
+    }
+    .my-events-page-top a{
+        color: var(--base-color);
+        font-size: 1.1rem;
+    }
+    .my-events-page-img-header {
+        margin-top: 1em;
+        font-size: 1.2rem;
+    }
+    .my-events-page-img-subheader{
+        font-family: var(--secondary-font);
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+    }
+
+
 /** End Events Page**/
 
 
@@ -1437,6 +1483,14 @@ form .form-row .form-input{
         right: .3em;
         top: .3em;
         padding: .2em .5em;
+    }
+
+    .my-events-page-text {
+        flex-basis: 26%;
+    }
+    .my-events-page-img{
+        flex-basis: 70%;
+        object-fit: contain;
     }
     
 
