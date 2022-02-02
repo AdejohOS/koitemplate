@@ -69,7 +69,7 @@ let swiperEvents = new Swiper('.upcomingEvents', {
 		spaceBetween: 40,
 	  },
 	  1240: {
-		slidesPerView: 3,
+		slidesPerView: 4,
 		spaceBetween: 50,
 	  },
 	},

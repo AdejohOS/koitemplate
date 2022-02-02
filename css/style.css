@@ -686,6 +686,10 @@ form .form-row .form-input{
     font-size: 1.5rem;
     margin-bottom: .8em;
 }
+.attend-text p{
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+}
 .curved-upper{
     background: #fff;
 }
@@ -1047,9 +1051,10 @@ form .form-row .form-input{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4%;
-    
-    
+    gap: 4%; 
+}
+.blog-col {
+    margin-bottom: 5em;
 }
 .showcase-img {
     flex-basis: 96%;  
@@ -1116,6 +1121,57 @@ form .form-row .form-input{
 
 
 /** End Blog **/
+
+/** Events Page**/
+    .my-events {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-events-container {
+        width: 90%;
+        margin: 5em 0;
+    }
+    .my-events-content {
+        display: flex;
+        gap: 1%;
+        flex-wrap: wrap;
+        margin-bottom: 4em;
+    }
+    .event-content-img {
+        position: relative;
+        flex-basis: 98%;
+    }
+    .event-content-img img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .event-content-text {
+        flex-basis: 98%;
+
+    }
+    .con-text {
+        margin-top: .8em;
+    }
+    .event-content-date {
+        background: var(--white);
+        position: absolute;
+        text-align: center;
+        left: .3em;
+        top: .3em;
+        padding: .2em .5em;
+    }
+    .date-month{
+        font-size: .9rem;
+        
+    }
+    .date-header{
+        font-size: 1.5rem;
+        
+    }
+
+/** End Events Page**/
 
 
 
@@ -1283,6 +1339,20 @@ form .form-row .form-input{
     flex-basis: 48%;
 }
 
+    .my-events-content {
+       
+        gap: 4%;
+       
+    }
+    .event-content-img {
+        
+        flex-basis: 40%;
+    }
+    .event-content-text {
+        flex-basis: 56%;
+
+    }
+
     
 
     
@@ -1358,6 +1428,16 @@ form .form-row .form-input{
 .blog-col3 {
     flex-basis: 30.7%;
 }
+
+    
+    .event-content-date {
+        background: var(--white);
+        position: absolute;
+        text-align: center;
+        right: .3em;
+        top: .3em;
+        padding: .2em .5em;
+    }
     
 
 }

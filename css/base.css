@@ -107,13 +107,30 @@ ul {
 }
 .sub-title::after{
     content: '';
-    width: 50%;
-    height: 5px;
+    width: 60%;
+    height: 3px;
     background: var(--light-secondary);
     display: block;
 }
 .date {
     font-size: .7rem;
+}
+.title {
+    font-size: 1.4rem;
+    display: inline-block;
+    
+    
+}
+.title a{
+    color: var(--base-color);
+}
+
+.title::after{
+    content: '';
+    width: 60%;
+    height: 3px;
+    background: var(--light-secondary);
+    display: block;
 }
 
 .button{
