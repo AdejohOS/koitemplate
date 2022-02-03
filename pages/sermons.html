@@ -127,66 +127,43 @@
         </section>
 
         <section class="message">
+           
+
+            
+            <div class="message-content">
+                <div class="box">
+                    <div class="col1">
+                        <img src="/images/misrv.jpg" alt="">
+                    </div>
+                    <div class="col2">
+                        <p class="date"><i class=" dt far fa-clock"></i> 18 June 2022<i class=" dt far fa-user"></i> <span class="teacher">Apostle Joshua Selman</span></p>
+        
+                        <hr>
+                        <h2 class="topic">The Supernatural State</h2>
+                        <p class="location" >Abuja, Nigeria.</p>
+                        <ul class="share">
+                            <p class="share"><a href="">Share <i class="fas fa-share-alt"></i></a></p>
+  
+                        </ul>
+                        
+                    </div>
+
+                    
+                        <div class="col3">
+                            
+                            <a class="btn" href="">Listen <i class="fas fa-headphones-alt"></i></a>
+                            <a class="btn" href="" download>Download <i class="far fa-arrow-alt-circle-down"></i></a>
+                        </div>
+                    
+                    
+                    
+                </div>
+            </div>
+
             
 
-                
-                <div class="message-content">
-                    <div class="box">
-                        <div class="col1">
-                            <img src="{{message.message_image.url}}" alt="">
-                        </div>
-                        <div class="col2">
-                            <p class="date"><i class=" dt far fa-clock"></i> August 03 2021 | <i class=" dt far fa-user"></i> <span class="teacher">Apostle Joshua Selman</span></p>
             
-                            <hr>
-                            <h2 class="topic">Wisdom in Thanksgiving</h2>
-                            <p class="location" >Koinonia, Abuja</p>
-                            <ul class="share">
-                                <p class="share"><a href="{% url 'details' message.id %}">Share <i class="fas fa-share-alt"></i></a></p>
-      
-                            </ul>
-                            
-                        </div>
-    
-                        
-                            <div class="col3">
-                                
-                                <a class="btn" href="{{message.message_audio.url}}">Listen <i class="fas fa-headphones-alt"></i></a>
-                                <a class="btn" href="{{message.message_audio.url}}" download>Download <i class="far fa-arrow-alt-circle-down"></i></a>
-                            </div>
-                        
-                        
-                        
-                    </div>
-                </div>
-    
-                {% endfor %}
-    
-                <div class="pagination">
-    
-    
-                    {% if message_page_obj.has_previous %}
-                        <div class="first">
-    
-                            <a class="btn" href="{% my_url 1 'page' request.GET.urlencode %}">&laquo; First</a>
-                            <a class="btn" href="{% my_url message_page_obj.previous_page_number  'page' request.GET.urlencode %}"> Previous</a>
-                        
-                        </div>
-                    {% endif %}
-    
-                    <span class="mid">
-                        Page {{message_page_obj.number}} of  {{message_page_obj.paginator.num_pages}}.
-                    </span>
-    
-                    <div class="last">
-                        {% if message_page_obj.has_next %}
-                        <a class="btn" href="{% my_url message_page_obj.next_page_number  'page' request.GET.urlencode %}"> Next </a>
-                        <a class="btn" href="{% my_url message_page_obj.paginator.num_pages  'page' request.GET.urlencode %}">&raquo; Last </a>
-                        {% endif %}
-                    </div>
-                    
-    
-                </div>
+
 
         </section>
 
