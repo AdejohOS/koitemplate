@@ -456,7 +456,58 @@ form .form-row .form-input{
 
 /**Message Section**/
 
-.message{
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.message-container {
+    width: 90%;
+}
+.message-content{
+    
+    display: flex;
+    gap: 2%;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: .5em .5em;
+    margin-bottom: 4em;
+    
+}
+.message-col-1 img {
+    max-width: 100%;
+}
+.message-col-1 {
+    width: 46%;
+    
+}
+.message-col-2 {
+    width: 50%;
+    
+    
+    
+}
+.message-text {
+    
+}
+.download {
+    
+   text-align: center;
+   display: flex;
+   gap: 4%;
+}
+.message-date {
+    font-size: .6rem;
+}
+.message-title {
+    font-size: .8rem;
+}
+.message-location, .download, .share {
+    font-size: .7rem;
+}
+
+/**.message{
     margin: 0 auto;
     width: 90%;
     
@@ -533,7 +584,7 @@ form .form-row .form-input{
     width: 25px;
 }
 
-
+**/
 
 
 
@@ -1504,7 +1555,44 @@ form .form-row .form-input{
         flex-basis: 70%;
         object-fit: contain;
     }
-    .message .message-content .box{
+
+   
+.message-content{
+    
+    display: flex;
+    gap: 4%;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: .5em .5em;
+    margin-bottom: 4em;
+    
+}
+.message-col-1 img {
+    max-width: 100%;
+}
+.message-col-1 {
+    width: 20%;
+    
+}
+.message-col-2 {
+    width: 76%;
+    display: flex;
+    gap: 10px;
+    
+}
+.message-text {
+    width: 56%;
+}
+.download {
+    width: 40%;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 4%;
+}
+    /**.message .message-content .box{
        height: 7rem;
        width: 100%;
        display: flex;
@@ -1545,7 +1633,7 @@ form .form-row .form-input{
     .message .message-content .box .col3 .btn{
         width: 80%;
         text-align:center;   
-    }
+    }**/
     
     
 
