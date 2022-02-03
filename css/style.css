@@ -468,7 +468,9 @@ form .form-row .form-input{
 .message-content{
     
     display: flex;
-    gap: 2%;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
     border-radius: 1rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     padding: .5em .5em;
@@ -477,34 +479,44 @@ form .form-row .form-input{
 }
 .message-col-1 img {
     max-width: 100%;
+    border-radius: 2px;
 }
 .message-col-1 {
-    width: 46%;
+    width: 40%;
     
 }
 .message-col-2 {
-    width: 50%;
+    width: 56%;
     
     
     
+}
+.message-content {
+    line-height: 10px;
 }
 .message-text {
     
 }
 .download {
     
-   text-align: center;
+   
    display: flex;
    gap: 4%;
 }
 .message-date {
-    font-size: .6rem;
+    font-size: .5rem;
 }
 .message-title {
-    font-size: .8rem;
+    font-size: .7rem;
 }
 .message-location, .download, .share {
-    font-size: .7rem;
+    font-size: .6rem;
+}
+.dl a{
+    display: block;
+    border: 2px solid var(--base-color);
+    padding: 0.5em 1em;
+    border-radius: 2px;
 }
 
 /**.message{
