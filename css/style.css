@@ -1344,10 +1344,7 @@ form .form-row .form-input{
         color: var(--base-color);
         font-size: 1.1rem;
     }
-    .my-sermon-page-img-header {
-        margin-top: 1em;
-        font-size: 1.2rem;
-    }
+    
     .my-sermon-page-img-subheader{
         font-family: var(--secondary-font);
         font-size: 1.2rem;
